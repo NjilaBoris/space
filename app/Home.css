@@ -1,0 +1,72 @@
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.hero {
+  position: relative;
+  width: 100%;
+  height: 100dvh;
+  padding: 0.6875rem;
+}
+
+.hero-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  border-radius: 2.063rem;
+  overflow: hidden;
+}
+
+.hero-img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  will-change: transform;
+}
+
+.hero-content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+  color: var(--color-white);
+}
+p {
+  font-family: "Roslindale Variable Display", sans-serif;
+}
+
+.hero-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 2.5rem;
+}
+
+.hero-footer h3 {
+  font-size: 7rem;
+  font-weight: 900;
+  line-height: 0.9;
+}
+
+@media (max-width: 800px) {
+  .hero-inner {
+    border-radius: 3rem;
+  }
+
+  .hero-footer {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: flex-start;
+  }
+
+  .hero-footer h3 {
+    width: 100%;
+    text-align: left;
+  }
+
+  .hero-footer h3 {
+    font-size: 1.3rem;
+  }
+}

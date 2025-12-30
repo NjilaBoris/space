@@ -1,3 +1,4 @@
+@import url("https://fonts.cdnfonts.com/css/roslindale");
 @import "tailwindcss";
 * {
   margin: 0;
@@ -5,6 +6,7 @@
   box-sizing: border-box;
 }
 @theme {
+  --font-space-grotesk: var(--font-space-grotesk);
   --color-primary: #000;
   --color-secondary: #fff;
   --color-accent: #fbf5ee;
@@ -19,7 +21,8 @@
 }
 body {
   background: #f5e5d5;
-  overflow: hidden;
+  overflow-x: hidden;
+  font-family: "Roslindale Variable", sans-serif;
 }
 ::view-transition-old(root),
 ::view-transition-new(root) {
