@@ -1,0 +1,9 @@
+.btn-content {
+  padding: 0px 30px;
+  height: 70px;
+  display: flex;
+  align-items: center;
+}
+.btn-container {
+  padding-right: 2px;
+}
