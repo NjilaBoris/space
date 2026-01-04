@@ -21,7 +21,7 @@ const Button = ({ label = "View Experiences", color, background }) => {
         <span
           className={cn(
             `h-15 group-hover:scale-0 transition-transform duration-550 relative rounded-full ${
-              color === "Red" ? "bg-red-50" : "bg-blue-100"
+              color ? "bg-red-50" : "bg-blue-100"
             } justify-center w-15 flex items-center`
           )}
         >

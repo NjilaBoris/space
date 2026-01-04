@@ -1,0 +1,12 @@
+.card-heading {
+  font-family: "Roslindale", sans-serif;
+  padding: 0.2rem;
+  font-weight: 500;
+}
+.card-sub-heading {
+  font-family: "Roslindale Variable", sans-serif;
+}
+.card-details {
+  font-family: "Roslindale", sans-serif;
+  font-weight: 400;
+}

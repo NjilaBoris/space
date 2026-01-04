@@ -25,6 +25,14 @@ video {
   height: 100%;
   will-change: transform;
 }
+.home-description {
+  font-family: "Roslindale Variable Display", sans-serif;
+  font-weight: 900;
+}
+.home-content {
+  font-weight: 200 !important;
+  font-family: "Roslindale Variable", sans-serif;
+}
 
 .hero-content {
   position: absolute;
