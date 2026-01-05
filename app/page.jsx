@@ -4,6 +4,7 @@ import "./Home.css";
 import Button from "../components/Button/Button";
 import AnimateCopy from "../components/AnimatedCopy/AnimateCopy";
 import Card from "../components/Card/Card";
+import AnimatedTitles from "../components/AnimatedTitles/AnimatedTitles";
 
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import gsap from "gsap";
@@ -34,7 +35,7 @@ const page = () => {
 
           <div className="hero-content z-6">
             <div className="hero-footer justify-between items-end flex w-full h-auto">
-              <div className="h-full w-160">
+              <div className="h-full w-140">
                 <h3 className="">
                   Live the Paris you&apos;ve only seen on screen
                 </h3>
@@ -42,7 +43,7 @@ const page = () => {
               <div className="w-auto h-full  ">
                 <div className=" flex flex-col gap-4  items-centers  h-full w-full ">
                   <div className="">
-                    <p className="font-medium text-[2.2rem] w-96">
+                    <p className="font-medium text-[2rem] w-96">
                       Created for people who dream of Paris- and want to live
                       it, not just visit
                     </p>
@@ -74,6 +75,7 @@ const page = () => {
         </div>
       </section>
       <Card />
+      <AnimatedTitles titles={["Walking Tour"]} />
     </>
   );
 };
