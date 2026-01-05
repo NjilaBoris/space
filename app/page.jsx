@@ -3,6 +3,7 @@ import React, { useEffect } from "react";
 import "./Home.css";
 import Button from "../components/Button/Button";
 import AnimateCopy from "../components/AnimatedCopy/AnimateCopy";
+import HoverCard from "../components/HoverCard/HoverCard";
 import Card from "../components/Card/Card";
 import AnimatedTitles from "../components/AnimatedTitles/AnimatedTitles";
 
@@ -76,6 +77,7 @@ const page = () => {
       </section>
       <Card />
       <AnimatedTitles titles={["Walking Tour"]} />
+      <HoverCard />
     </>
   );
 };
