@@ -1,0 +1,51 @@
+.heading-title {
+  font-size: 10rem;
+  font-weight: 500;
+  line-height: 1;
+  font-family: "Roslindale Variable Display", sans-serif;
+  letter-spacing: -0.25rem;
+}
+
+.intro,
+.outro {
+  height: 100svh;
+  text-align: center;
+  align-content: center;
+}
+
+.title {
+  height: 85svh;
+  display: flex;
+  align-items: center;
+}
+
+.title-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  will-change: transform;
+}
+
+.title:nth-child(1),
+.title:nth-child(3) {
+  background-color: #f5e5d5;
+}
+
+.title:nth-child(2) {
+  background-color: #f5e5d5;
+}
+
+.char {
+  position: relative;
+  display: inline-block;
+  will-change: transform;
+}
+
+@media (max-width: 1000px) {
+  h1 {
+    font-size: 3rem;
+    letter-spacing: 0;
+  }
+}

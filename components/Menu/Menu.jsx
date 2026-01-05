@@ -18,8 +18,10 @@ const Menu = () => {
           </motion.span>
         </div>
 
-        <div className="flex flex-1 justify-center mix-blend-difference">
-          <h1 className="text-[3rem]  text-dark-200">PARIS BY EMILY</h1>
+        <div className="flex flex-1 justify-center">
+          <h1 className="text-[3rem] mix-blend-color  text-dark-200">
+            PARIS BY EMILY
+          </h1>
         </div>
 
         <div className="flex flex-1 justify-end px-4">
