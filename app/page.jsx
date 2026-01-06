@@ -8,6 +8,7 @@ import Card from "../components/Card/Card";
 import AnimatedTitles from "../components/AnimatedTitles/AnimatedTitles";
 import Copy from "../components/Copy/Copy";
 import Footer from "../components/Footer/Footer";
+import Preloader, { isInitialLoad } from "../components/Preloader/Preloader";
 
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import gsap from "gsap";
@@ -30,6 +31,7 @@ const page = () => {
   }, []);
   return (
     <>
+      <Preloader />
       <section className="hero">
         <div className="hero-inner">
           <div className="absolute  z-5 w-full h-full left-0 right-0 bottom-0 top-0" />
@@ -40,17 +42,27 @@ const page = () => {
           <div className="hero-content z-6">
             <div className="hero-footer justify-between items-end flex w-full h-auto">
               <div className="h-full w-140">
-                <h3 className="">
-                  Live the Paris you&apos;ve only seen on screen
-                </h3>
+                <Copy
+                  animateOnScroll={false}
+                  delay={isInitialLoad ? 5.75 : 0.75}
+                >
+                  <h3 className="">
+                    Live the Paris you&apos;ve only seen on screen
+                  </h3>
+                </Copy>
               </div>
               <div className="w-auto h-full  ">
                 <div className=" flex flex-col gap-4  items-centers  h-full w-full ">
                   <div className="">
-                    <p className="font-medium text-[2rem] w-96">
-                      Created for people who dream of Paris- and want to live
-                      it, not just visit
-                    </p>
+                    <Copy
+                      animateOnScroll={false}
+                      delay={isInitialLoad ? 6.35 : 1.65}
+                    >
+                      <p className="font-medium text-[2rem] w-96">
+                        Created for people who dream of Paris- and want to live
+                        it, not just visit
+                      </p>
+                    </Copy>
                   </div>
                   <div>
                     <Button color background />
