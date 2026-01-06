@@ -6,9 +6,12 @@ import AnimateCopy from "../components/AnimatedCopy/AnimateCopy";
 import HoverCard from "../components/HoverCard/HoverCard";
 import Card from "../components/Card/Card";
 import AnimatedTitles from "../components/AnimatedTitles/AnimatedTitles";
+import Copy from "../components/Copy/Copy";
+import Footer from "../components/Footer/Footer";
 
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import gsap from "gsap";
+import Image from "next/image";
 
 gsap.registerPlugin(ScrollTrigger);
 const page = () => {
@@ -78,6 +81,59 @@ const page = () => {
       <Card />
       <AnimatedTitles titles={["Walking Tour"]} />
       <HoverCard />
+      <section className="h-dvh w-full  p-10!">
+        <div className="h-full w-full gap-5 bg-blue-50 rounded-4xl flex flex-col items-center justify-center">
+          <div className="w-120">
+            <div className="text-center">
+              <Copy>
+                <h2 className="text-[1.8rem]">Danielle, Netherlands</h2>
+              </Copy>
+              <Copy>
+                <p className="text-center text-[2rem]">
+                  It was such a joyful and affirming experience. Thank you,
+                  Guillaume, for such a memorable and enriching workshop. We
+                  can’t recommend it highly enough!
+                </p>
+              </Copy>
+            </div>
+          </div>
+          <Button color />
+        </div>
+      </section>
+      <section className="w-full  p-20! text-gallery">
+        <div className="text-[3rem] text-center text-dark-100">
+          <span className="leading-10 ">
+            From
+            <Image
+              src="/images/bread.avif"
+              alt="bread"
+              width={100}
+              height={100}
+              className="inline-flex mx-8!"
+            />
+            <span className="bg-blue-100 p-1!">croissant-making</span> workshops
+            to{" "}
+            <Image
+              src="/images/town.avif"
+              alt="bread"
+              width={100}
+              height={100}
+              className="inline-flex mx-8!"
+            />{" "}
+            <span className="bg-blue-50 p-1!">champagne Seine cruises,</span>{" "}
+            <Image
+              src="/images/bread.avif"
+              alt="bread"
+              width={100}
+              height={100}
+              className="inline-flex mx-8!"
+            />{" "}
+            discover <span className="bg-red-50 p-1!">secret street</span> and
+            Paris moments à la Emily.
+          </span>
+        </div>
+      </section>
+      <Footer />
     </>
   );
 };
